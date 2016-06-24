@@ -1,1 +1,4 @@
+# optional installs
+youtube-dl
+
 pytest==2.9.2
