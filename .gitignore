@@ -1,4 +1,10 @@
 *.py[cod]
+.Python
+.cache/
+
+# virtualenv
+include
+bin
 
 # C extensions
 *.so
