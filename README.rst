@@ -1,8 +1,9 @@
 MoviePy
 ========
 
-[![Build Status](https://travis-ci.org/tellybug/moviepy.svg?branch=master)](https://travis-ci.org/tellybug/moviepy)
-[![Coverage Status](https://coveralls.io/repos/github/tellybug/moviepy/badge.svg?branch=master)](https://coveralls.io/github/tellybug/moviepy?branch=master)
+.. image:: https://travis-ci.org/tellybug/moviepy.svg?branch=master
+    :target: https://travis-ci.org/tellybug/moviepy
+.. image:: https://coveralls.io/repos/github/tellybug/moviepy/badge.svg?branch=master :target: https://coveralls.io/github/tellybug/moviepy?branch=master
 
 MoviePy (full documentation here_) is a Python module for video editing: cuts, concatenations, title insertions, video compositing (a.k.a. non-linear editing), video processing, and creation of custom effects. See the gallery_ for some examples of use.
 
