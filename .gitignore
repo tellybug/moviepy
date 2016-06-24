@@ -5,6 +5,8 @@
 # virtualenv
 include
 bin
+share
+etc
 
 # C extensions
 *.so
