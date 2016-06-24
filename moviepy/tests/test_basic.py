@@ -30,3 +30,10 @@ def test_open_image(fixtures_path):
     image = ImageClip(os.path.join(fixtures_path, "Reggie.jpg"))
     assert image.w == 5674
     assert image.h == 3191
+
+
+def test_resize_image(fixtures_path):
+    image = ImageClip(os.path.join(fixtures_path, "Reggie.jpg"))
+    image = image.resize((1920, 1080))
+    assert image.w == 1920
+    assert image.h == 1080
