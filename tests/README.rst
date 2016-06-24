@@ -1,1 +1,0 @@
-No official test suite for the moment. Coming soon.
