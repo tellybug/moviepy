@@ -2,6 +2,6 @@
 youtube-dl
 
 pytest==2.9.2
-coverage==3.7.1
-python-coveralls
-pytest-cov
+coverage==4.1
+python-coveralls==2.7.0
+pytest-cov==2.2.1
