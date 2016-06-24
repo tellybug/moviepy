@@ -10,6 +10,6 @@ install:
   - "pip install -r test-requirements.txt"
 # command to run tests
 script:
-  - py.test moviepy
+  - py.test --cov=moviepy moviepy
 after_success:
   - coveralls
