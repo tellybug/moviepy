@@ -144,12 +144,12 @@ class FFMPEG_VideoReader:
         """
 
         # these definitely need to be rechecked sometime. Seems to work.
-        
+
         # I use that horrible '+0.00001' hack because sometimes due to numerical
         # imprecisions a 3.0 can become a 2.99999999... which makes the int()
         # go to the previous integer. This makes the fetching more robust in the
         # case where you get the nth frame by writing get_frame(n/fps).
-        
+
         pos = int(self.fps*t + 0.00001)+1
 
         if pos == self.pos:
@@ -238,7 +238,7 @@ def ffmpeg_parse_infos(filename, print_infos=False, check_duration=True):
 
     proc.stdout.readline()
     proc.terminate()
-    infos = proc.stderr.read().decode('utf8')
+    infos = proc.stderr.read().decode('utf8', errors='replace')
     del proc
 
     if print_infos:
