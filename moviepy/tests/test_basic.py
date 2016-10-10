@@ -16,19 +16,11 @@ def fixtures_file(name):
 
 
 def setup_module(module):
-    download_webfile("M3EO_qzrKB0", fixtures_file('youtube.mp4'))
     download_webfile('http://tellybug-static.s3.amazonaws.com/xfitv.tellybug.com/video/20161009/201053/TXF_TX13_Ryan_081016_APP.mp4',
                      fixtures_file('TXF_TX13_Ryan_081016_APP.mp4'))
 
 def teardown_module(module):
     pass
-
-
-def test_open_mp4(fixtures_path):
-    video = VideoFileClip(os.path.join(fixtures_path, "youtube.mkv"))
-    assert video.duration == 204.1
-    assert video.w == 1920
-    assert video.h == 1080
 
 
 def test_open_mov(fixtures_path):
